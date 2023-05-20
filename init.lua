@@ -40,6 +40,9 @@ vim.o.smartcase = true
 vim.o.updatetime = 250
 vim.wo.signcolumn = "yes"
 
+-- Execute LSP Format on Save
+vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
+
 -- Plugin management {{{
 local lazy = require("lazy")
 lazy.setup("plugins")
