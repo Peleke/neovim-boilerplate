@@ -102,6 +102,30 @@ return {
   },
   -- }}}
 
+  -- Add more treesitter parsers {{{
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "bash",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "query",
+        "regex",
+        "tsx",
+        "typescript",
+        "vim",
+        "yaml",
+      },
+    },
+  },
+  -- }}}
+
   -- TreeSitter {{{
   {
     "nvim-treesitter/nvim-treesitter",
@@ -111,6 +135,13 @@ return {
     config = function()
       require "extensions.treesitter"
     end
+  },
+  -- }}}
+
+  -- Null-LS {{{
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    dependencies = "nvim-lua/plenary.nvim",
   },
   -- }}}
 
