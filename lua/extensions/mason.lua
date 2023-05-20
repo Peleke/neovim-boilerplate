@@ -19,7 +19,6 @@ mason_lspconfig.setup({
     "pyright",            -- LSP for Python
     "volar",               -- LSP for Vue
     "clangd",              -- LSP for C++
-    "asm_lsp",             -- LSP for GAS/NASM, GO
     "remark_ls",           -- LSP for Markdown
     "spectral",            -- LSP for OpenAPI
     "sqlls",               -- LSP for SQL
